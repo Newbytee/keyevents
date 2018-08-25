@@ -28,11 +28,13 @@ footer {
 }
 
 #warning {
-    display: none;
+    position: relative;
+    visibility: hidden;
+    top: -45px;
 }
 
 #warning:hover {
-    display: block;
+    visibility: visible;
 }
 
 @media screen and (min-width: 768px) {

@@ -13,6 +13,14 @@ document.addEventListener("keypress", function(event) {
             case 0:
                 secondaryDisplays[i].innerHTML = event.key;
                 break;
+            case 1:
+                secondaryDisplays[i].innerHTML = event.code;
+                break;
+            case 2:
+                secondaryDisplays[i].innerHTML = event.locale;
+                break;
+            case 3:
+                secondaryDisplays[i].innerHTML = event.keyCode;
         }
     }
 });

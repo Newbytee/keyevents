@@ -11,10 +11,20 @@ footer {
 }
 
 .codeItem {
+    position: relative;
     background-color: black;
     color: white;
     font-family: monospace;
     width: 50%;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.codeItem:nth-of-type(1):hover {
+    position: relative;
+    right: 3px;
+    top: -3px;
     transition: 0.5s;
 }
 

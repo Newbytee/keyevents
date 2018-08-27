@@ -1,6 +1,7 @@
 "use strict";
 const titleDisplay = document.getElementById("title");
 const mainDisplay = document.getElementById("mainDisplay");
+const popupWarning = document.getElementById("warning");
 const secondaryDisplays = document.getElementsByClassName("codeItemText");
 const nSecondaryDisplays = secondaryDisplays.length;
 
@@ -25,6 +26,10 @@ document.addEventListener("keypress", function(event) {
     }
 });
 
-document.getElementById("warningIcon").addEventListener("onhover", function() {
-    alert("hi");
+document.getElementById("warningIcon").addEventListener("mouseover", function() {
+    popupWarning.style.display = "inline";
+});
+
+document.getElementById("warningIcon").addEventListener("mouseout", function() {
+    popupWarning.style.display = "none";
 });

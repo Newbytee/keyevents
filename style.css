@@ -15,6 +15,12 @@ footer {
     color: white;
     font-family: monospace;
     width: 50%;
+    transition: 0.5s;
+}
+
+.codeItem:hover {
+    transition: 0.5s;
+    background-color: #FF6666;
 }
 
 #wrapper {
@@ -25,16 +31,16 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 #warning {
-    position: absolute;
-    visibility: hidden;
-    top: -45px;
+    position: relative;
+    display: none;
 }
 
-#warning:hover {
-    visibility: visible;
+#warningIcon {
+    border-bottom: 1px dotted #FFF;
 }
 
 @media screen and (min-width: 768px) {

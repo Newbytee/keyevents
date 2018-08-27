@@ -24,3 +24,7 @@ document.addEventListener("keypress", function(event) {
         }
     }
 });
+
+document.getElementById("warningIcon").addEventListener("onhover", function() {
+    alert("hi");
+});
